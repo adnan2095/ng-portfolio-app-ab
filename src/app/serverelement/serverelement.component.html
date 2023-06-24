@@ -1,0 +1,16 @@
+<div *ngIf="serverelement.type === 'server'" style="color: brown">
+  <div>
+    Server name : {{ serverelement.name }}
+    <br />
+    Server Content: {{ serverelement.content }}
+  </div>
+</div>
+<hr />
+<br />
+<div *ngIf="serverelement.type === 'blueprint'" style="color: blue">
+  <div>
+    Server name : {{ serverelement.name }}
+    <br />
+    Server Content: {{ serverelement.content }}
+  </div>
+</div>

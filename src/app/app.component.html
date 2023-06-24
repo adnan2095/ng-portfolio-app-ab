@@ -1,0 +1,8 @@
+<app-cockpit
+  (ServerAdded)="serveradded($event)"
+  (BPAdded)="blueprintadded($event)"
+></app-cockpit>
+<app-serverelement
+  *ngFor="let serverelemnt of serverelementarr"
+  [serverelement]="serverelemnt"
+></app-serverelement>
