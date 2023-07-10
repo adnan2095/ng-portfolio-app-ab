@@ -3,6 +3,5 @@ export interface infoboxcontent {
   head4: string;
   para: string;
   imgurl: string;
-
   disp: string;
 }

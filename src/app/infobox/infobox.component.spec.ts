@@ -8,7 +8,7 @@ describe('InfoboxComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [InfoboxComponent]
+      declarations: [InfoboxComponent],
     });
     fixture = TestBed.createComponent(InfoboxComponent);
     component = fixture.componentInstance;
