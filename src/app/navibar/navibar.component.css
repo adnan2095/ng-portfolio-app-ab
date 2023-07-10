@@ -1,0 +1,46 @@
+body {
+  color: azure;
+}
+
+.maindiv {
+  display: flex;
+}
+
+.div1 {
+  justify-content: center;
+
+  /* border-color: aliceblue;
+  border-style: dashed; */
+}
+
+.imgdiv {
+  padding-top: 10px;
+}
+
+.div2 {
+  width: 100%;
+  /* border-color: aliceblue;
+  border-style: dashed; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin-left: 5ch;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: white;
+}

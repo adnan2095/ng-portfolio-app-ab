@@ -1,0 +1,27 @@
+.info-box-div {
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: rgb(15, 15, 15);
+  background-image: url("../../assets/pics/bg1.png");
+  border-radius: 4ch;
+  padding: 5ch;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  color: gray;
+}
+
+p {
+  color: gray;
+}
+
+.textdiv {
+  margin-left: 3ch;
+}
+
+img {
+  border-radius: 2ch;
+  height: auto;
+}
