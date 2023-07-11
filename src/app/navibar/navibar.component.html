@@ -7,14 +7,8 @@
     </div>
     <div class="div2">
       <ul>
-        <li>
-          <a routerLink="homepage">Home</a>
-        </li>
-        <li>
-          <a routerLink="aboutpage">About</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
+        <li *ngFor="let links of linksArray">
+          <a routerLink="{{ links.linkPath }}">{{ links.linkTitle }}</a>
         </li>
       </ul>
     </div>

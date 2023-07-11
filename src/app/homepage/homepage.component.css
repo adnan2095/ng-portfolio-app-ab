@@ -5,11 +5,17 @@ section {
   display: flex;
 }
 
-.d2,
-.d3 {
+.s1d2 {
   margin-left: 3ch;
 }
 
+.s2d2 {
+  margin-left: 0ch;
+}
+
+.s2d3 {
+  margin-left: 3ch;
+}
 .s2 {
   margin-top: 3ch;
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { boxdataarray } from '../infoboxdata';
+import { boxDataArray } from '../infoboxdata';
 
 @Component({
   selector: 'app-aboutpage',
@@ -7,5 +7,5 @@ import { boxdataarray } from '../infoboxdata';
   styleUrls: ['./aboutpage.component.css'],
 })
 export class AboutpageComponent {
-  boxdata = boxdataarray;
+  boxData = boxDataArray;
 }

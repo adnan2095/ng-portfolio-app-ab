@@ -25,3 +25,23 @@ img {
   border-radius: 2ch;
   height: auto;
 }
+
+.divicon {
+  position: relative;
+}
+
+.iconimg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 10%;
+  transition: opacity 0.2s;
+}
+
+.info-box-div:hover .iconimg {
+  opacity: 100%;
+}
+
+.customSettingClass {
+  margin-top: 10ch;
+}

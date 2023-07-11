@@ -7,10 +7,11 @@ import { infoboxcontent } from '../infobox';
   styleUrls: ['./infobox.component.css'],
 })
 export class InfoboxComponent {
-  @Input() boxcontent!: infoboxcontent;
+  @Input() boxContent!: infoboxcontent;
   @ViewChild('textdiv', { static: true }) sdiv!: ElementRef;
+  flag: boolean = false;
 
-  getsdiv(): HTMLElement {
-    return this.sdiv.nativeElement;
+  setflag() {
+    this.flag = true;
   }
 }

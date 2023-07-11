@@ -4,7 +4,7 @@ import {
   ViewChildren,
   QueryList,
 } from '@angular/core';
-import { boxdataarray } from '../infoboxdata';
+import { boxDataArray } from '../infoboxdata';
 import { InfoboxComponent } from '../infobox/infobox.component';
 
 @Component({
@@ -13,13 +13,17 @@ import { InfoboxComponent } from '../infobox/infobox.component';
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements AfterViewInit {
-  @ViewChildren(InfoboxComponent) chcomponent!: QueryList<InfoboxComponent>;
+  @ViewChildren(InfoboxComponent)
+  chldComponentElement!: QueryList<InfoboxComponent>;
 
-  boxdata = boxdataarray;
+  boxData = boxDataArray;
+  startIndex = 2;
+
+  keyFrameString: string =
+    '-LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED-LATEST WORK AND FEATURED -LATEST WORK AND FEATURED';
 
   ngAfterViewInit() {
-    const thcomp = this.chcomponent.toArray()[4];
-    const sdiv = thcomp.getsdiv();
-    sdiv.style.marginTop = '10ch';
+    const selectedComponent = this.chldComponentElement.toArray()[4];
+    selectedComponent.setflag();
   }
 }

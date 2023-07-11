@@ -8,9 +8,6 @@ body {
 
 .div1 {
   justify-content: center;
-
-  /* border-color: aliceblue;
-  border-style: dashed; */
 }
 
 .imgdiv {
@@ -19,8 +16,6 @@ body {
 
 .div2 {
   width: 100%;
-  /* border-color: aliceblue;
-  border-style: dashed; */
   justify-content: center;
   align-items: center;
   display: flex;

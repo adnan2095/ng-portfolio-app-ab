@@ -1,57 +1,51 @@
 import { infoboxcontent } from './infobox';
 
-export const boxdataarray: infoboxcontent[] = [
+export const boxDataArray: infoboxcontent[] = [
   {
-    head4: 'A WEB DESIGNER',
-    head1: 'Abdul Muqsit Hakmi.',
-    para: 'I am a Front End Developer in Lahore',
-    imgurl: '../../assets/pics/img1.jpg',
-
-    disp: 'flex',
+    heading4: 'A WEB DESIGNER',
+    heading1: 'Abdul Muqsit Hakmi.',
+    paragraphContent: 'I am a Front End Developer in Lahore',
+    imageUrl: '../../assets/pics/img1.jpg',
+    displayStyle: 'flex',
   },
 
   {
-    head4: 'MORE ABOUT ME',
-    head1: 'Credentials',
-    para: '',
-    imgurl: '../../assets/pics/sign.png',
-
-    disp: 'block',
+    heading4: 'MORE ABOUT ME',
+    heading1: 'Credentials',
+    paragraphContent: '',
+    imageUrl: '../../assets/pics/sign.png',
+    displayStyle: 'block',
   },
 
   {
-    head4: 'SHOWCASE',
-    head1: 'Projects',
-    para: '',
-    imgurl: '../../assets/pics/my-works.png',
-
-    disp: 'block',
+    heading4: 'SHOWCASE',
+    heading1: 'Projects',
+    paragraphContent: '',
+    imageUrl: '../../assets/pics/my-works.png',
+    displayStyle: 'block',
   },
 
   {
-    head4: 'BLOG',
-    head1: 'GFonts',
-    para: '',
-    imgurl: '../../assets/pics/gfonts.png',
-
-    disp: 'block',
+    heading4: 'BLOG',
+    heading1: 'GFonts',
+    paragraphContent: '',
+    imageUrl: '../../assets/pics/gfonts.png',
+    displayStyle: 'block',
   },
 
   {
-    head4: 'SPECIALIZATION',
-    head1: 'Services Offering',
-    para: '',
-    imgurl: '../../assets/pics/services.jpg',
-
-    disp: 'block',
+    heading4: 'SPECIALIZATION',
+    heading1: 'Services Offering',
+    paragraphContent: '',
+    imageUrl: '../../assets/pics/services.jpg',
+    displayStyle: 'block',
   },
 
   {
-    head4: 'STAY WITH ME',
-    head1: 'Profiles',
-    para: '',
-    imgurl: '../../assets/pics/sign.png',
-
-    disp: 'block',
+    heading4: 'STAY WITH ME',
+    heading1: 'Profiles',
+    paragraphContent: '',
+    imageUrl: '../../assets/pics/sign.png',
+    displayStyle: 'block',
   },
 ];

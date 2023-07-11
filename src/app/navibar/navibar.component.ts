@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './navibar.component.html',
   styleUrls: ['./navibar.component.css'],
 })
-export class NavibarComponent {}
+export class NavibarComponent {
+  linksArray = [
+    { linkTitle: 'Home', linkPath: '' },
+    { linkTitle: 'About', linkPath: 'aboutpage' },
+    { linkTitle: 'Contact', linkPath: 'aboutpage' },
+  ];
+}
