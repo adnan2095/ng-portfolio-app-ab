@@ -1,0 +1,10 @@
+<div class="main-divInfo2">
+  <h3>{{ heading3 }}</h3>
+  <ul>
+    <li *ngFor="let dataarray of infoBox2array">
+      <p class="date">{{ dataarray.boxDate }}</p>
+      <h2 class="degreename">{{ dataarray.degreeName }}</h2>
+      <p class="inst">{{ dataarray.uniName }}</p>
+    </li>
+  </ul>
+</div>

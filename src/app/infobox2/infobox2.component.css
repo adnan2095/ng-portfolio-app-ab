@@ -1,0 +1,62 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.main-divInfo2 {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: auto;
+  background-color: rgb(15, 15, 15);
+  background-image: url("../../assets/pics/bg1.png");
+  background-image: linear-gradient(
+    to right,
+    rgba(69, 68, 68, 0.321),
+    rgba(49, 49, 49, 0.127)
+  );
+  border-radius: 4ch;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3ch;
+  flex-direction: column;
+  animation: zoomIn 3s ease;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100;
+  }
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+li {
+  display: list-item;
+  list-style-type: none;
+}
+
+p {
+  color: darkgrey;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.degreename {
+  font-size: 18px;
+}
+
+.inst {
+  color: #bcbcbc;
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: 400;
+  margin: 0;
+}

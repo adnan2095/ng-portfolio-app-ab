@@ -29,6 +29,7 @@ section {
 
 .s2d3 {
   margin-left: 30px;
+  height: 100%;
 }
 .s2 {
   margin-top: 3ch;
@@ -93,6 +94,13 @@ section {
     display: flex;
     flex-direction: column;
     margin-left: 0ch;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 

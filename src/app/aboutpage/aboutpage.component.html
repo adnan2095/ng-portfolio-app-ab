@@ -1,2 +1,39 @@
 <app-slidediv></app-slidediv>
-<app-infobox [boxContent]="boxData[2]"></app-infobox>
+<div class="container-aboutpage">
+  <div class="div1">
+    <section class="secdiv1">
+      <div class="img-outer">
+        <div class="profile-img">
+          <app-infobox [boxContent]="boxData[6]"></app-infobox>
+        </div>
+      </div>
+      <div class="aboutme-details">
+        <h1 class="about-h1">{{ heading1Box1 }}</h1>
+        <app-infobox [boxContent]="boxData[7]"></app-infobox>
+      </div>
+    </section>
+  </div>
+  <div class="div2">
+    <section class="secdiv2">
+      <div class="infobox2div" *ngFor="let dataarray of array2D; let i = index">
+        <app-infobox2
+          [heading3]="heading3box[i]"
+          [infoBox2array]="dataarray"
+        ></app-infobox2>
+      </div>
+    </section>
+  </div>
+  <div class="div3" (wheel)="setDisplay()">
+    <section class="secdiv3" [ngStyle]="{ display: displaySection3 }">
+      <div class="s3db1">
+        <app-infobox [boxContent]="boxData[5]"></app-infobox>
+      </div>
+      <div class="s3db2">
+        <app-infobox [boxContent]="boxData[8]"></app-infobox>
+      </div>
+      <div class="s3db3">
+        <app-infobox [boxContent]="boxData[1]"></app-infobox>
+      </div>
+    </section>
+  </div>
+</div>

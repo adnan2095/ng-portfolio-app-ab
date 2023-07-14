@@ -25,7 +25,7 @@ export class HomepageComponent implements AfterViewInit {
   ngAfterViewInit() {
     const infoBoxInstance1 = this.chldComponentElement.toArray()[0];
     const infoBoxInstance4 = this.chldComponentElement.toArray()[4];
-    infoBoxInstance1.setflag();
-    infoBoxInstance4.setflag();
+    infoBoxInstance1.settingHomepage('instance1');
+    infoBoxInstance4.settingHomepage('instance2');
   }
 }

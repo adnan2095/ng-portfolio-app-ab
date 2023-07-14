@@ -1,0 +1,131 @@
+.container-aboutpage {
+  margin-left: 12%;
+  margin-right: 10%;
+}
+
+.secdiv1 {
+  display: flex;
+}
+
+.about-h1 {
+  font-size: 74px;
+  font-weight: 600;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  animation: zoomIn 3s ease;
+}
+
+.aboutme-details {
+  margin-left: 2%;
+  height: 100%;
+  width: 80%;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+}
+
+.secdiv2 {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.infobox2div {
+  width: 100%;
+  height: min-content;
+}
+
+.secdiv3 {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.s3db2 {
+  width: 700px;
+}
+
+.div3 {
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .secdiv1 {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    width: fit-content;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .aboutme-details {
+    width: 100%;
+  }
+
+  .img-outer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1410px) {
+  .container-aboutpage {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .s3db2 {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .secdiv3 {
+    flex-direction: column;
+  }
+
+  .s3db2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .secdiv2 {
+    flex-direction: column;
+  }
+  .about-h1 {
+    font-size: 50px;
+  }
+
+  .profile-img {
+    width: fit-content;
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .profile-img {
+    width: fit-content;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .about-h1 {
+    font-size: 30px;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100;
+  }
+}

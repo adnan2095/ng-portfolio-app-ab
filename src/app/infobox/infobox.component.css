@@ -52,15 +52,10 @@ p {
   max-width: 100%;
 }
 
-.divicon {
-  position: relative;
-  bottom: 0;
-}
-
 .iconimg {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 2ch;
+  right: 2ch;
   opacity: 10%;
   transition: opacity 0.2s;
 }
@@ -69,20 +64,26 @@ p {
   opacity: 100%;
 }
 
-.customSettingClass {
-  position: relative;
-  margin-top: 10ch;
-  margin-left: 2ch;
+.custominst1 {
+  margin-left: 20px;
+}
+
+.custominst2 {
+  margin-top: 8ch;
+}
+
+.displayNone {
+  display: none;
+}
+
+.customAboutpage {
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 1100px) {
-  .textdiv {
-    width: 100%;
+  .textdiv,
+  .custominst2 {
     text-align: center;
-  }
-
-  .customSettingClass {
-    margin-top: 1ch;
   }
 
   .img-div {
@@ -92,12 +93,22 @@ p {
 }
 
 @media only screen and (max-width: 550px) {
-  .info-box-div,
-  .customSettingClass {
+  .info-box-div {
     font-size: smaller;
   }
 
   .divicon {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .div-img {
+    min-height: 50%;
+    min-width: 50%;
+  }
+
+  .custominst1 {
+    font-size: smaller;
   }
 }

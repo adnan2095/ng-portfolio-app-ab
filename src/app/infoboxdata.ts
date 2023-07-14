@@ -12,7 +12,6 @@ export const boxDataArray: infoboxcontent[] = [
   {
     heading4: 'MORE ABOUT ME',
     heading1: 'Credentials',
-    paragraphContent: '',
     imageUrl: '../../assets/pics/sign.png',
     displayStyle: 'block',
   },
@@ -20,7 +19,6 @@ export const boxDataArray: infoboxcontent[] = [
   {
     heading4: 'SHOWCASE',
     heading1: 'Projects',
-    paragraphContent: '',
     imageUrl: '../../assets/pics/my-works.png',
     displayStyle: 'block',
   },
@@ -28,7 +26,6 @@ export const boxDataArray: infoboxcontent[] = [
   {
     heading4: 'BLOG',
     heading1: 'GFonts',
-    paragraphContent: '',
     imageUrl: '../../assets/pics/gfonts.png',
     displayStyle: 'block',
   },
@@ -36,7 +33,6 @@ export const boxDataArray: infoboxcontent[] = [
   {
     heading4: 'SPECIALIZATION',
     heading1: 'Services Offering',
-    paragraphContent: '',
     imageUrl: '../../assets/pics/services.jpg',
     displayStyle: 'block',
   },
@@ -44,8 +40,25 @@ export const boxDataArray: infoboxcontent[] = [
   {
     heading4: 'STAY WITH ME',
     heading1: 'Profiles',
-    paragraphContent: '',
     imageUrl: '../../assets/pics/sign.png',
+    displayStyle: 'block',
+  },
+
+  {
+    imageUrl: '../../assets/pics/img1.jpg',
+    displayStyle: 'block',
+  },
+
+  {
+    heading1: 'Abdul Muqsit Hakmi',
+    paragraphContent:
+      'I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.',
+    imageUrl: '../../assets/pics/ab.jpg',
+    displayStyle: 'block',
+  },
+  {
+    heading1: `Let's`,
+    imageUrl: '../../assets/pics/ab.jpg',
     displayStyle: 'block',
   },
 ];

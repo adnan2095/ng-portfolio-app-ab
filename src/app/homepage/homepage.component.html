@@ -26,7 +26,7 @@
 
   <section class="s2">
     <div class="s2-div1" *ngFor="let data of boxData; let i = index">
-      <ng-container *ngIf="i > startIndex">
+      <ng-container *ngIf="i > startIndex && i < startIndex + 4">
         <div class="s2d2" [ngClass]="{ s2d3: i > 3 }">
           <app-infobox [boxContent]="data"></app-infobox>
         </div>

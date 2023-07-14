@@ -8,13 +8,33 @@
     <div class="img-div">
       <img class="div-img" [src]="boxContent.imageUrl" alt="My Profile" />
     </div>
-    <div class="textdiv" [ngClass]="{ customSettingClass: flag == true }">
+    <div
+      [ngClass]="{
+        custominst1: customSetting == 'instance1',
+        custominst2: customSetting == 'instance2',
+        textdiv: customSetting == 'default',
+        customAboutpage: flag2 === true
+      }"
+    >
       <h4>{{ boxContent.heading4 }}</h4>
-      <h1>{{ boxContent.heading1 }}</h1>
+      <h1>
+        {{ boxContent.heading1 }}
+        <span *ngIf="flag2"
+          ><br />work
+          <span style="color: #5b78f6">together</span>
+        </span>
+      </h1>
       <p>{{ boxContent.paragraphContent }}</p>
-    </div>
-    <div class="divicon">
-      <img class="iconimg" src="..//../assets/pics/icon.png" alt="" />
+
+      <img
+        [ngClass]="{
+          divicon: hideIcon == false,
+          displayNone: hideIcon == true
+        }"
+        class="iconimg"
+        src="../../assets/pics/icon.png"
+        alt=""
+      />
     </div>
   </div>
 </div>
