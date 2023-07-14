@@ -66,6 +66,7 @@ p {
 
 .custominst1 {
   margin-left: 20px;
+  width: 100%;
 }
 
 .custominst2 {
@@ -80,9 +81,29 @@ p {
   font-size: 30px;
 }
 
+.acc-icon-div {
+  display: flex;
+  gap: 30px;
+}
+
+.img-div {
+  width: 100%;
+}
+
+.accountIcon {
+  background-image: url("../../assets/pics/bg2.jpg");
+  border-radius: 2ch;
+  width: 26ch;
+  display: flex;
+  justify-content: center;
+  height: 15ch;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1100px) {
   .textdiv,
-  .custominst2 {
+  .custominst2,
+  .accountIcon {
     text-align: center;
   }
 

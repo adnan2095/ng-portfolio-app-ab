@@ -5,21 +5,32 @@
       display: boxContent.displayStyle,
     }"
   >
-    <div class="img-div">
-      <img class="div-img" [src]="boxContent.imageUrl" alt="My Profile" />
+    <div
+      class="img-div"
+      [ngClass]="{ accountIcon: boxType == 'HPageinstance6' }"
+    >
+      <div *ngIf="boxType == 'HPageinstance6'" class="acc-icon-div">
+        <app-socialaccount platformName="twitter"></app-socialaccount>
+        <app-socialaccount platformName="insta"></app-socialaccount>
+      </div>
+      <img
+        *ngIf="boxType != 'HPageinstance6'"
+        class="div-img"
+        [src]="boxContent.imageUrl"
+        alt="My Profile"
+      />
     </div>
     <div
       [ngClass]="{
-        custominst1: customSetting == 'instance1',
-        custominst2: customSetting == 'instance2',
-        textdiv: customSetting == 'default',
-        customAboutpage: flag2 === true
+        custominst1: boxType === 'HPageinstance1',
+        custominst2: boxType === 'HPageinstance5',
+        customAboutpage: boxType === 'APageinstance4'
       }"
     >
       <h4>{{ boxContent.heading4 }}</h4>
       <h1>
         {{ boxContent.heading1 }}
-        <span *ngIf="flag2"
+        <span *ngIf="boxType == 'APageinstance4'"
           ><br />work
           <span style="color: #5b78f6">together</span>
         </span>

@@ -26,10 +26,16 @@
   <div class="div3" (wheel)="setDisplay()">
     <section class="secdiv3" [ngStyle]="{ display: displaySection3 }">
       <div class="s3db1">
-        <app-infobox [boxContent]="boxData[5]"></app-infobox>
+        <app-infobox
+          [boxContent]="boxData[5]"
+          boxType="HPageinstance6"
+        ></app-infobox>
       </div>
       <div class="s3db2">
-        <app-infobox [boxContent]="boxData[8]"></app-infobox>
+        <app-infobox
+          [boxContent]="boxData[8]"
+          boxType="APageinstance4"
+        ></app-infobox>
       </div>
       <div class="s3db3">
         <app-infobox [boxContent]="boxData[1]"></app-infobox>

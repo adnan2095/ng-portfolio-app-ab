@@ -40,7 +40,7 @@ export const boxDataArray: infoboxcontent[] = [
   {
     heading4: 'STAY WITH ME',
     heading1: 'Profiles',
-    imageUrl: '../../assets/pics/sign.png',
+    imageUrl: '../../assets/pics/bg2.jpg',
     displayStyle: 'block',
   },
 

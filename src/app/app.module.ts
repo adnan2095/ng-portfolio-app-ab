@@ -10,6 +10,7 @@ import { InfoboxComponent } from './infobox/infobox.component';
 import { SlidedivComponent } from './slidediv/slidediv.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Infobox2Component } from './infobox2/infobox2.component';
+import { SocialaccountComponent } from './socialaccount/socialaccount.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { Infobox2Component } from './infobox2/infobox2.component';
     InfoboxComponent,
     SlidedivComponent,
     Infobox2Component,
+    SocialaccountComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

@@ -22,10 +22,5 @@ export class HomepageComponent implements AfterViewInit {
   keyFrameString: string =
     '-LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED-LATEST WORK AND FEATURED -LATEST WORK AND FEATURED';
 
-  ngAfterViewInit() {
-    const infoBoxInstance1 = this.chldComponentElement.toArray()[0];
-    const infoBoxInstance4 = this.chldComponentElement.toArray()[4];
-    infoBoxInstance1.settingHomepage('instance1');
-    infoBoxInstance4.settingHomepage('instance2');
-  }
+  ngAfterViewInit() {}
 }

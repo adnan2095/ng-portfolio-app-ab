@@ -31,8 +31,6 @@ export class AboutpageComponent implements AfterViewInit {
       .toArray()
       .slice(0, 2)
       .forEach((child) => child.HideImgIcon());
-    const instance4 = this.childComponents.toArray()[3];
-    instance4.setflagAboutpage();
   }
 
   @HostListener('window:scroll')

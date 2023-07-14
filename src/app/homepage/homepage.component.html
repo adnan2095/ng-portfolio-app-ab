@@ -3,7 +3,10 @@
   <section class="s1">
     <div class="s1-maindiv">
       <div class="myinfodiv">
-        <app-infobox [boxContent]="boxData[0]"></app-infobox>
+        <app-infobox
+          [boxContent]="boxData[0]"
+          boxType="HPageinstance1"
+        ></app-infobox>
       </div>
 
       <div class="animdiv">
@@ -28,7 +31,10 @@
     <div class="s2-div1" *ngFor="let data of boxData; let i = index">
       <ng-container *ngIf="i > startIndex && i < startIndex + 4">
         <div class="s2d2" [ngClass]="{ s2d3: i > 3 }">
-          <app-infobox [boxContent]="data"></app-infobox>
+          <app-infobox
+            [boxContent]="data"
+            [boxType]="'HPageinstance' + (i + 1)"
+          ></app-infobox>
         </div>
       </ng-container>
     </div>
