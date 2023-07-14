@@ -7,6 +7,8 @@ import { NavibarComponent } from './navibar/navibar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
 import { InfoboxComponent } from './infobox/infobox.component';
+import { SlidedivComponent } from './slidediv/slidediv.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,9 @@ import { InfoboxComponent } from './infobox/infobox.component';
     HomepageComponent,
     AboutpageComponent,
     InfoboxComponent,
+    SlidedivComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

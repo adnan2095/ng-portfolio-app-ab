@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, Input, ChangeDetectorRef } from '@angular/core';
 import { infoboxcontent } from '../infobox';
 
 @Component({
@@ -8,10 +8,13 @@ import { infoboxcontent } from '../infobox';
 })
 export class InfoboxComponent {
   @Input() boxContent!: infoboxcontent;
-  @ViewChild('textdiv', { static: true }) sdiv!: ElementRef;
   flag: boolean = false;
+  displayContent = 'none';
+
+  constructor(private cdr: ChangeDetectorRef) {}
 
   setflag() {
     this.flag = true;
+    this.cdr.detectChanges();
   }
 }

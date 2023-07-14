@@ -1,12 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-div {
+  height: 100%;
+}
+
 .info-box-div {
+  position: relative;
   display: flex;
-  height: auto;
+  height: 100%;
   width: auto;
   background-color: rgb(15, 15, 15);
   background-image: url("../../assets/pics/bg1.png");
+  background-image: linear-gradient(
+    to right,
+    rgba(69, 68, 68, 0.321),
+    rgba(49, 49, 49, 0.127)
+  );
   border-radius: 4ch;
-  padding: 5ch;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 3ch;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 100;
+  }
+}
+
+.zoom-in-animation {
+  animation: zoomIn 3s ease;
 }
 
 h4 {
@@ -17,17 +46,15 @@ p {
   color: gray;
 }
 
-.textdiv {
-  margin-left: 3ch;
-}
-
-img {
+.div-img {
   border-radius: 2ch;
   height: auto;
+  max-width: 100%;
 }
 
 .divicon {
   position: relative;
+  bottom: 0;
 }
 
 .iconimg {
@@ -43,5 +70,34 @@ img {
 }
 
 .customSettingClass {
+  position: relative;
   margin-top: 10ch;
+  margin-left: 2ch;
+}
+
+@media only screen and (max-width: 1100px) {
+  .textdiv {
+    width: 100%;
+    text-align: center;
+  }
+
+  .customSettingClass {
+    margin-top: 1ch;
+  }
+
+  .img-div {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .info-box-div,
+  .customSettingClass {
+    font-size: smaller;
+  }
+
+  .divicon {
+    display: none;
+  }
 }

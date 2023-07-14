@@ -1,16 +1,27 @@
 <body>
-  <div class="maindiv">
-    <div class="div1">
-      <div class="imgdiv">
-        <img src="~../../assets/pics/logo.jpg" width="90px " height="30px" />
-      </div>
+  <div
+    class="maindiv"
+    [ngStyle]="{ display: displayOption }"
+    [ngClass]="{ maindivFooter: navBarType === 'footer' }"
+  >
+    <div>
+      <img src="~../../assets/pics/logo.jpg" />
     </div>
-    <div class="div2">
+    <div
+      class="list-div"
+      [ngClass]="{ listDivFooter: navBarType === 'footer' }"
+    >
       <ul>
         <li *ngFor="let links of linksArray">
           <a routerLink="{{ links.linkPath }}">{{ links.linkTitle }}</a>
         </li>
       </ul>
+    </div>
+    <div
+      class="theme-btn"
+      [ngClass]="{ themeBtnFooter: navBarType === 'footer' }"
+    >
+      Let's Talk
     </div>
   </div>
 </body>

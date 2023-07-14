@@ -1,23 +1,26 @@
+<app-slidediv></app-slidediv>
 <div class="container">
   <section class="s1">
-    <div class="myinfodiv">
-      <app-infobox [boxContent]="boxData[0]"></app-infobox>
-    </div>
+    <div class="s1-maindiv">
+      <div class="myinfodiv">
+        <app-infobox [boxContent]="boxData[0]"></app-infobox>
+      </div>
 
-    <div class="animdiv">
-      <section>
-        <div class="kframediv">
-          <span>{{ keyFrameString }}</span>
-        </div>
-      </section>
-      <section class="mini-section">
-        <div class="s1d2">
-          <app-infobox [boxContent]="boxData[1]"></app-infobox>
-        </div>
-        <div class="s1d2">
-          <app-infobox [boxContent]="boxData[2]"></app-infobox>
-        </div>
-      </section>
+      <div class="animdiv">
+        <section class="s1-minisection1">
+          <div class="kframediv zoom-in-animation">
+            <span>{{ keyFrameString }}</span>
+          </div>
+        </section>
+        <section class="s1-minisection2">
+          <div class="s1d2">
+            <app-infobox [boxContent]="boxData[1]"></app-infobox>
+          </div>
+          <div class="s1d3">
+            <app-infobox [boxContent]="boxData[2]"></app-infobox>
+          </div>
+        </section>
+      </div>
     </div>
   </section>
 

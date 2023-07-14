@@ -23,7 +23,9 @@ export class HomepageComponent implements AfterViewInit {
     '-LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED -LATEST WORK AND FEATURED-LATEST WORK AND FEATURED -LATEST WORK AND FEATURED';
 
   ngAfterViewInit() {
-    const selectedComponent = this.chldComponentElement.toArray()[4];
-    selectedComponent.setflag();
+    const infoBoxInstance1 = this.chldComponentElement.toArray()[0];
+    const infoBoxInstance4 = this.chldComponentElement.toArray()[4];
+    infoBoxInstance1.setflag();
+    infoBoxInstance4.setflag();
   }
 }
