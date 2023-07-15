@@ -1,10 +1,20 @@
-<div class="main-divInfo2">
+<div
+  class="main-divInfo2"
+  [ngClass]="{ maindivInfoContact: pageType == 'contact' }"
+>
   <h3>{{ heading3 }}</h3>
-  <ul>
+  <ul [ngClass]="{ ulContact: pageType == 'contact' }">
     <li *ngFor="let dataarray of infoBox2array">
-      <p class="date">{{ dataarray.boxDate }}</p>
-      <h2 class="degreename">{{ dataarray.degreeName }}</h2>
-      <p class="inst">{{ dataarray.uniName }}</p>
+      <div class="li-div">
+        <div *ngIf="pageType == 'contact'">
+          <img [src]="dataarray.box2ImgUrl" alt="" />
+        </div>
+        <div class="infobox2Content">
+          <p class="date">{{ dataarray.paragraph1 }}</p>
+          <h2 class="degreename">{{ dataarray.headingContent }}</h2>
+          <p class="inst">{{ dataarray.paragraph2 }}</p>
+        </div>
+      </div>
     </li>
   </ul>
 </div>

@@ -1,0 +1,35 @@
+<app-slidediv></app-slidediv>
+<div class="maindiv-contactpage">
+  <div class="contact-info">
+    <app-infobox2
+      pageType="contact"
+      [infoBox2array]="CPagedataArray"
+      heading3="CONTACT INFO"
+    ></app-infobox2>
+    <h3>SOCIAL INFO</h3>
+    <ul>
+      <li *ngFor="let iconType of iconTypeArray">
+        <app-socialaccount [platformName]="iconType"></app-socialaccount>
+      </li>
+    </ul>
+  </div>
+  <div class="contact-form">
+    <img class="formDivImg" src="../../assets/pics/aboutpageicon.png" alt="" />
+    <h1>
+      {{ heading1Content }}
+      <span style="color: #5b78f6">{{ spanContent }}</span>
+    </h1>
+    <ul class="input-ul">
+      <li *ngFor="let inputData of inputDataArray">
+        <app-forminput
+          [inputType]="inputData.type"
+          [placehold]="inputData.placehold"
+        ></app-forminput>
+      </li>
+    </ul>
+    <a routerLink="../sample-api-data">
+      <app-thmbutton buttonTitle="Initiate API" (click)="onclk()">
+      </app-thmbutton>
+    </a>
+  </div>
+</div>

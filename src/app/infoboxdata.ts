@@ -58,7 +58,7 @@ export const boxDataArray: infoboxcontent[] = [
   },
   {
     heading1: `Let's`,
-    imageUrl: '../../assets/pics/ab.jpg',
+    imageUrl: '../../assets/pics/aboutpageicon.png',
     displayStyle: 'block',
   },
 ];

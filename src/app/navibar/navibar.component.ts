@@ -11,7 +11,7 @@ export class NavibarComponent implements OnInit {
   linksArray = [
     { linkTitle: 'Home', linkPath: '' },
     { linkTitle: 'About', linkPath: 'aboutpage' },
-    { linkTitle: 'Contact', linkPath: 'aboutpage' },
+    { linkTitle: 'Contact', linkPath: 'contactpage' },
   ];
 
   displayOption = 'none';

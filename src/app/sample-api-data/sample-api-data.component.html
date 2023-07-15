@@ -1,0 +1,11 @@
+<div>Sample API Data Page</div>
+<div class="container-api">
+  <ul>
+    <li *ngFor="let serverData of serverDataArr">
+      <h3>Employee ID: {{ serverData.id }}</h3>
+      <h3>Employee Name: {{ serverData.employee_name }}</h3>
+      <h3>Employee Age: {{ serverData.employee_age }}</h3>
+      <h3>Employee Salary: {{ serverData.employee_salary }}</h3>
+    </li>
+  </ul>
+</div>

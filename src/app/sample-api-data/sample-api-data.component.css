@@ -1,0 +1,15 @@
+.container-api {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul {
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10ch;
+}
+
+li {
+  list-style-type: none;
+}

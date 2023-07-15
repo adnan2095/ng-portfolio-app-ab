@@ -17,11 +17,10 @@
         </li>
       </ul>
     </div>
-    <div
-      class="theme-btn"
-      [ngClass]="{ themeBtnFooter: navBarType === 'footer' }"
-    >
-      Let's Talk
+    <div [ngClass]="{ themeBtnFooter: navBarType === 'footer' }">
+      <div class="theme-btn">
+        <app-thmbutton buttonTitle="Lets Talk"></app-thmbutton>
+      </div>
     </div>
   </div>
 </body>

@@ -11,6 +11,11 @@ import { SlidedivComponent } from './slidediv/slidediv.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Infobox2Component } from './infobox2/infobox2.component';
 import { SocialaccountComponent } from './socialaccount/socialaccount.component';
+import { ContactpageComponent } from './contactpage/contactpage.component';
+import { ForminputComponent } from './forminput/forminput.component';
+import { ThmbuttonComponent } from './thmbutton/thmbutton.component';
+import { SampleApiDataComponent } from './sample-api-data/sample-api-data.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,8 +27,17 @@ import { SocialaccountComponent } from './socialaccount/socialaccount.component'
     SlidedivComponent,
     Infobox2Component,
     SocialaccountComponent,
+    ContactpageComponent,
+    ForminputComponent,
+    ThmbuttonComponent,
+    SampleApiDataComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

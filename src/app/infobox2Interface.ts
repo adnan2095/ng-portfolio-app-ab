@@ -1,5 +1,6 @@
 export interface infobox2Interface {
-  boxDate: string;
-  degreeName: string;
-  uniName: string;
+  box2ImgUrl?: String;
+  paragraph1: string;
+  headingContent: string;
+  paragraph2?: string;
 }

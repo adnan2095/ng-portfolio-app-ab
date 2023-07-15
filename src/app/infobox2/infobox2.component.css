@@ -20,6 +20,11 @@
   animation: zoomIn 3s ease;
 }
 
+.maindivInfoContact {
+  height: fit-content;
+  background-image: none;
+}
+
 @keyframes zoomIn {
   0% {
     transform: scale(0.5);
@@ -33,6 +38,13 @@
 
 ul {
   padding-inline-start: 0px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ulContact {
+  gap: 70px;
 }
 
 li {
@@ -59,4 +71,9 @@ p {
   opacity: 0.6;
   font-weight: 400;
   margin: 0;
+}
+
+.li-div {
+  display: flex;
+  gap: 20px;
 }
