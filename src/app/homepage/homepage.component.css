@@ -74,7 +74,7 @@ section {
 
 .kframediv span {
   white-space: nowrap;
-  animation: slide-left 20s linear infinite;
+  animation: slide-left 10s linear infinite;
   position: absolute;
 }
 
@@ -83,7 +83,7 @@ section {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 

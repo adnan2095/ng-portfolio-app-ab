@@ -42,7 +42,6 @@ export class SlidedivComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.state = this.state === 'out' ? 'in' : 'out';
-
     this.cdr.detectChanges();
   }
 }
